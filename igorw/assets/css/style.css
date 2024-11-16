@@ -1,0 +1,155 @@
+.title-cadastro {
+    background-color: white;
+    width: 300px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 1px;
+    border: black solid 1px;
+    padding: 15px;
+}
+
+.section-main-cadastro {
+    background-color: white;
+    width: 500px;
+    max-width: 70%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: black solid 1px;
+}
+
+.input-cadastro {
+    font-size: 20px;
+    width: 400px;
+    max-width: 90%;
+    height: 40px;
+    background-color: rgb(15, 69, 113);
+    color: rgb(115, 105, 117);
+    padding: 10px;
+    margin-right: 20px;
+    border-color: rgb(15, 69, 113);
+    border-radius: 4px;
+}
+
+.title-section {
+    text-align: left;
+}
+
+.div-email-cadastro {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.div-senha-cadastro {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.botton-cadastro {
+    cursor: pointer;
+    background-color: rgb(15, 69, 113);
+    border: solid rgb(15, 69, 113) 1px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    width: 190px;
+    max-width: 70%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.botton-termo {
+    cursor: default;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 35px;
+    color: #000;
+    font-size: 22px;
+}
+
+.termo-cadastro {
+    color: blue;
+}
+
+.termo-cadastro:hover {
+    color: blue;
+}
+
+.termo-cadastro:visited {
+    color: blue;
+}
+
+.title-login {
+    background-color: white;
+    width: 200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 1px;
+    border: black solid 1px;
+    padding: 15px;
+}
+
+.section-main {
+    background-color: white;
+    width: 500px;
+    max-width: 70%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: black solid 1px;
+}
+
+.input-login {
+    font-size: 20px;
+    width: 400px;
+    max-width: 90%;
+    height: 60px;
+    background-color: rgb(15, 69, 113);
+    color: rgb(115, 105, 117);
+    padding: 10px;
+    margin-right: 20px;
+    border-color: rgb(15, 69, 113);
+    border-radius: 4px;
+}
+
+.title-section {
+    cursor: default;
+    text-align: left;
+}
+
+.div-email {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.div-senha {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.botton-login {
+    cursor: pointer;
+    background-color: rgb(15, 69, 113);
+    border: solid rgb(15, 69, 113) 1px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    width: 190px;
+    max-width: 70%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="robots" content="all" />
+	<meta name="googlebot" content="all" />
+	<meta name="keywords" content="Santa Cruz do Sul, RS, Rio Grande do Sul, Brasil, Ouvidoria, Serviços ao Usuário, Atendimento, cidadão, crítica, reclamação, elogio, denúncia, protocolo" />
+	<meta name="description" content="Santa Cruz do Sul, RS, Rio Grande do Sul, Brasil">
+	<meta name="author" content="Ricardo Voigt - ricardo@santacruz.rs.gov.br">
+
+<title>Ouvidoria - Santa Cruz do Sul</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body >
+
+<div class="container marketing">
+
+
+<hr class="featurette-divider">
+
+<script language="javascript" type="text/javascript">function submitEnter(field,e) { 
+ var keycode = (window.Event) ? e.which : e.keyCode; 
+ if(keycode == 13){ 
+  for(i=0; i < field.form.elements.length; i++){   
+   if((field.form.elements[i].name == 'btOk')      
+    &&((field.form.elements[i].type == 'button')   
+     ||(field.form.elements[i].type == 'submit'))){ 
+     field.form.btOk.click();
+     return false; 
+   } 
+  } 
+  return false; 
+ }else{  
+  if(keycode == 27){ 
+   for(i=0; i < field.form.elements.length; i++) {   
+    if ((field.form.elements[i].name == 'btNo')      
+     && (field.form.elements[i].type == 'button')) { 
+      field.form.btNo.click();
+      return false; 
+    } 
+   } 
+   return false; 
+  }else{ 
+   return true; 
+  }
+ }
+}
+ 
+</script>
+<style type='text/css' media='screen'>
+.tfield
+{
+	 border: solid;
+	 border-color: #a0a0a0;
+	 border-width: 1px;
+	 z-index: 1;
+}
+</style>
+<style type='text/css' media='screen'>
+.tfield_disabled
+{
+	 border: solid;
+	 border-color: #a0a0a0;
+	 border-width: 1px;
+	 background-color: #e0e0e0;
+	 color: #000000;
+}
+</style>
+<style type='text/css' media='screen'>
+.tbigfield
+{
+	 border: solid;
+	 border-color: #a0a0a0;
+	 border-width: 1px;
+	 z-index: 1;
+	 font-size: 18pt;
+}
+</style>
+<style type='text/css' media='screen'>
+.tbigfield_disabled
+{
+	 border: solid;
+	 border-color: #a0a0a0;
+	 border-width: 1px;
+	 background-color: #e0e0e0;
+	 color: #000000;
+	 font-size: 18pt;
+}
+</style>
+<html><form name="OuvidoriaRegistroForm" method="post" enctype="multipart/form-data" class="navbar-form navbar-left"><div><input class="tfield" name="id_tipo" id="id_tipo" value="6" type="hidden"></input>
+<div></div>
+<h2>Atendimento ao Cidadão (CACI)</h2><hr><div class="form-group"><label for='nome'>Nome Completo : <b>*</b></label><input class="form-control" type="text" name="nome" id="nome" value="" onkeypress="return submitEnter(this, event)"></input>
+</div>
+<div class="form-group"><label for='cpf'>Número do CPF : </label><script language="javascript" type="text/javascript">function somenteInt(field, e){
+ var strCheck = '0123456789'; 
+ var keycode = (window.Event) ? e.which : e.keyCode; 
+ if((keycode==null)||(keycode==0)||(keycode==8) 
+  ||(keycode==9)||(keycode==13)||(keycode==27) )
+    return submitEnter(field,e); 
+ key = String.fromCharCode(keycode); 
+ if(strCheck.indexOf(key) == -1){ 
+  return false; 
+ }else{ 
+  return submitEnter(field,e); 
+ } 
+}
+</script>
+<input class="form-control" type="text" name="cpf" id="cpf" value="" style="width:100;text-align: right;" onkeypress="return somenteInt(this, event)" maxlength="11"></input>
+</div>
+<div class="form-group"><label for='email'>E-mail : </label><input class="form-control" type="text" name="email" id="email" value="" onkeypress="return submitEnter(this, event)"></input>
+</div>
+<div class="form-group"><label for='telefone'>Telefone : <b>*</b></label><script language="javascript" type="text/javascript">function mascaraPhone(field, e){ 
+ var keycode = (window.Event) ? e.which : e.keyCode; 
+ if ((keycode==null) || (keycode==0) || (keycode==8) || 
+     (keycode==9) || (keycode==13) || (keycode==27) )
+   return submitEnter(field,e); 
+ var key = String.fromCharCode(keycode); 
+ var strCheck = '0123456789'; 
+ if (strCheck.indexOf(key) == -1){ 
+  return false; 
+ } else { 
+  var data = field.value;  
+  if (data.length == 0){ 
+   data = '('; 
+   field.value = data; 
+   return true; 
+  } else { 
+   if (data.length == 3){ 
+    data = data + ')'; 
+    field.value = data; 
+    return true; 
+   } else { 
+    if (data.length == 9){ 
+     data = data + '-'; 
+     field.value = data; 
+     return true; 
+    } else { 
+     return true; 
+    } 
+   } 
+  } 
+ } 
+} 
+</script>
+<input class="form-control" type="text" name="telefone" id="telefone" value="" style="width:100" maxlength="14" onkeypress="return mascaraPhone(this, event)"></input>
+</div>
+<div class="form-group"><label for="texto">Solicitação (explique o que você quer) : <b>*</b></label><textarea class="form-control" name="texto" id="texto" style="width:200;"></textarea>
+</div>
+<div class="form-group"><label for="anexo">Anexar Arquivo : </label><br><input class="tfield" name="anexo[]" id="anexo[]" value="" type="file" multiple="1"></input>
+</div>
+<div class="form-group"><label for="codigo">Repita o Código de Verificação : <b>*</b></label><input class="form-control" type="text" name="codigo" id="codigo" value="" onkeypress="return submitEnter(this, event)"></input>
+<img src="secimg.php?width=100&amp;height=45&amp;characters=3"></img>
+</div>
+<input class="btn btn-primary" type="button" name="btNo" id="btNo" value="<< Voltar" onclick="document.OuvidoriaRegistroForm.action='?class=PrincipalPage&method=onAbertura'; document.OuvidoriaRegistroForm.submit()"></input>
+<input class="btn btn-primary" type="button" name="btOk" id="btOk" value="Enviar >>" onclick="document.OuvidoriaRegistroForm.action='?class=PrincipalPage&method=onGrava&idtipo=6'; document.OuvidoriaRegistroForm.submit()"></input>
+<b>*</b> <i>Campos de preenchimento obrigatório</i></div>
+</form>
+</html>
+
+
+</div>
+
+
+<div class="container marketing">
+
+<hr class="featurette-divider">
+
+<footer>
+	<p><a href="/comunicacao/carta-de-servicos-caci-sic-e-ouvidoria" target="_blank">Carta de Serviços ao Usuário</a></p>
+	<p><a href="/servicos/servicos-para-o-cidadao" target="_blank">Mais Serviços ao Cidadão</a></p>
+	<p><a href="/conteudo/faq-perguntas-frequentes" target="_blank">Perguntas Frequentes</a></p>
+</footer>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
