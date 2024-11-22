@@ -1,59 +1,427 @@
-<!DOCTYPE html>
-<html lang="pt">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/img/pegada_icone.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/main.js"></script>
-    <title>Cadastro - ECOmércio</title>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="DTIC" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <meta name="description" content="Prefeitura Municipal de Santa Cruz do Sul, RS, Brasil" />
+    <meta name="keywords" content="Prefeitura Municipal de Santa Cruz do Sul, RS, Brasil" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <base href="https://www.santacruz.rs.gov.br/" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Prefeitura Municipal de Santa Cruz do Sul, RS, Brasil</title>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134042079-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-134042079-1');
+	</script>
+	<!-- End of GA -->
 
     <style>
-        html,
-        body {
-            background-image: url(../assets/img/fundo_index.webp);
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+        .title-cadastro {
+    background-color: white;
+    width: 300px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 1px;
+    border: black solid 1px;
+    padding: 15px;
+}
+
+.section-main-cadastro {
+    background-color: white;
+    width: 500px;
+    max-width: 70%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: black solid 1px;
+}
+
+.input-cadastro {
+    font-size: 20px;
+    width: 400px;
+    max-width: 90%;
+    height: 40px;
+    background-color: rgb(15, 69, 113);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-right: 20px;
+    border-color: rgb(15, 69, 113);
+    border-radius: 4px;
+}
+
+.title-section {
+    text-align: left;
+}
+
+.div-email-cadastro {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.div-senha-cadastro {
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: ;
+}
+
+.botton-cadastro {
+    cursor: pointer;
+    background-color:#2A9CE0;
+    border: solid  1px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    width: 190px;
+    max-width: 70%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.botton-termo {
+    cursor: default;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 35px;
+    color: #000;
+    font-size: 22px;
+}
+
+.termo-cadastro {
+    color: blue;
+}
+
+.termo-cadastro:hover {
+    color: blue;
+}
+
+.termo-cadastro:visited {
+    color: blue;
+}
+
+.title-login {
+    background-color: white;
+    width: 200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 1px;
+    border: black solid 1px;
+    padding: 15px;
+}
+
+.section-main {
+    background-color: white;
+    width: 500px;
+    max-width: 70%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: black solid 1px;
+}
+
+.input-login {
+    font-size: 20px;
+    width: 400px;
+    max-width: 90%;
+    height: 60px;
+    background-color: rgb(15, 69, 113);
+    color: rgb(115, 105, 117);
+    padding: 10px;
+    margin-right: 20px;
+    border-color: rgb(15, 69, 113);
+    border-radius: 4px;
+}
+
+.title-section {
+    cursor: default;
+    text-align: left;
+}
+
+.div-email {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.div-senha {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.botton-login {
+    cursor: pointer;
+    background-color: rgb(15, 69, 113);
+    border: solid rgb(15, 69, 113) 1px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    width: 190px;
+    max-width: 70%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.obrigacao{
+    text-align: center;
+    color: red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h3{
+  color: black;
+}
+
+.obrigado{
+  font-size: 15px ;
+}
+
     </style>
-</head>
 
-<body>
-
-    <header>
-        <section class="section-header">
-            <h1 class="title-cadastro">Cadastre-se</h1>
-        </section>
-    </header>
-
-    <main>
-        <section class="section-main-cadastro">
-            <div class="div-email-cadastro">
-                <h4 class="title-section">E-mail</h4>
-                <input class="input-cadastro" required type="text" name="login" placeholder="Ex: exemplo@gmail.com">
+  </head>
+  <body>
+  <header>
+    <!-- Barra superior -->
+    <div class="site-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
             </div>
+            <div class="col-lg-4 text-center">
+              <a href="/home">
+                <img src="website-images/brasao-topo.png" alt="Brasão do Município" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-lg-4 text-center">
+
+            <div class="widget">
+              <ul class="list-unstyled social">
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/prefeitura_santacruz/" target="_blank"><span class="icon-instagram" title="Ícone do Instagram"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/prefeiturasantacruzdosul/?locale=pt_BR" target="_blank"><span class="icon-facebook" title="Ícone do Facebook"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="/comunicacao/whatsapp"><span class="icon-whatsapp" title="Whatsapp:(51)98443-0312"></span></a>
+                </li>
+              </ul>
+            </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- Default menu -->
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap text-center">
+          <div class="site-navigation">
+
+            <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-none" >
+              <li ><a href="http://127.0.0.1:5500/">Início</a></li>
+
+<li class="has-children"><a href="links/municipio" title="Munic&iacute;pio">Munic&iacute;pio</a><ul class="dropdown"><li><a href="municipio/brasao-e-slogan-oficial"  title="Bras&atilde;o e Slogan Oficial">Bras&atilde;o e Slogan Oficial</a></li><li><a href="municipio/hino"  title="Hino">Hino</a></li><li><a href="municipio/localizacao"  title="Localiza&ccedil;&atilde;o">Localiza&ccedil;&atilde;o</a></li><li><a href="municipio/santa-cruz-hoje"  title="Santa Cruz Hoje">Santa Cruz Hoje</a></li></ul></li><li class="has-children"><a href="links/governo" title="Governo">Governo</a><ul class="dropdown"><li class="has-children"><a href="governo/gabinete-da-prefeita-municipal"  title="Gabinete da Prefeita Municipal">Gabinete da Prefeita Municipal</a><ul class="dropdown"><li><a href="governo/junta-de-servico-militar-274"  title="Junta de Servi&ccedil;o Militar 274">Junta de Servi&ccedil;o Militar 274</a></li><li><a href="governo/unidade-central-de-controle-interno"  title="Unidade Central de Controle Interno">Unidade Central de Controle Interno</a></li></ul></li><li><a href="governo/gabinete-do-vice-prefeito-municipal"  title="Gabinete do Vice-Prefeito Municipal">Gabinete do Vice-Prefeito Municipal</a></li></ul></li><li class="has-children"><a href="links/secretarias" title="Secretarias">Secretarias</a><ul class="dropdown"><li class="has-children"><a href="secretarias/administracao"  title="Administra&ccedil;&atilde;o">Administra&ccedil;&atilde;o</a><ul class="dropdown"><li><a href="http://www.santacruz.rs.gov.br/cgqm/" target="_blank" title="Centro de Gest&atilde;o e Qualifica&ccedil;&atilde;o Municipal">Centro de Gest&atilde;o e Qualifica&ccedil;&atilde;o Municipal</a></li></ul></li><li class="has-children"><a href="secretarias/agricultura"  title="Agricultura">Agricultura</a><ul class="dropdown"><li><a href="secretarias/feiras-rurais"  title="Feiras Rurais">Feiras Rurais</a></li><li><a href="secretarias/servico-de-inspecao-municipal-sim"  title="Servi&ccedil;o de Inspe&ccedil;&atilde;o Municipal (SIM)">Servi&ccedil;o de Inspe&ccedil;&atilde;o Municipal (SIM)</a></li></ul></li><li><a href="secretarias/cultura"  title="Cultura">Cultura</a></li><li><a href="secretarias/desenvolvimento-economico-e-turismo"  title="Desenvolvimento Econ&ocirc;mico e Turismo">Desenvolvimento Econ&ocirc;mico e Turismo</a></li><li><a href="secretarias/desenvolvimento-social"  title="Desenvolvimento Social">Desenvolvimento Social</a></li><li class="has-children"><a href="secretarias/educacao"  title="Educa&ccedil;&atilde;o">Educa&ccedil;&atilde;o</a><ul class="dropdown"><li><a href="secretarias/educacao-infantil"  title="Educa&ccedil;&atilde;o Infantil">Educa&ccedil;&atilde;o Infantil</a></li><li><a href="secretarias/ensino-fundamental"  title="Ensino Fundamental">Ensino Fundamental</a></li></ul></li><li class="has-children"><a href="secretarias/fazenda"  title="Fazenda">Fazenda</a><ul class="dropdown"><li><a href="secretarias/certidao-negativa-para-empresas"  title="Certid&atilde;o Negativa para Empresas">Certid&atilde;o Negativa para Empresas</a></li><li><a href="secretarias/contabilidade"  title="Contabilidade">Contabilidade</a></li><li><a href="secretarias/fiscalizacao-tributaria"  title="Fiscaliza&ccedil;&atilde;o Tribut&aacute;ria">Fiscaliza&ccedil;&atilde;o Tribut&aacute;ria</a></li></ul></li><li><a href="secretarias/habitacao-e-regularizacao-fundiaria"  title="Habita&ccedil;&atilde;o e Regulariza&ccedil;&atilde;o Fundi&aacute;ria">Habita&ccedil;&atilde;o e Regulariza&ccedil;&atilde;o Fundi&aacute;ria</a></li><li class="has-children"><a href="secretarias/meio-ambiente-saneamento-e-sustentabilidade"  title="Meio Ambiente, Saneamento e Sustentabilidade">Meio Ambiente, Saneamento e Sustentabilidade</a><ul class="dropdown"><li><a href="secretarias/canil-municipal"  title="Canil Municipal">Canil Municipal</a></li><li><a href="secretarias/crepel"  title="CREPEL">CREPEL</a></li></ul></li><li class="has-children"><a href="secretarias/obras-e-infraestrutura"  title="Obras e Infraestrutura">Obras e Infraestrutura</a><ul class="dropdown"><li><a href="secretarias/subprefeituras"  title="Subprefeituras">Subprefeituras</a></li></ul></li><li><a href="secretarias/planejamento-e-governanca"  title="Planejamento e Governan&ccedil;a">Planejamento e Governan&ccedil;a</a></li><li class="has-children"><a href="secretarias/procuradoria-geral-do-municipio"  title="Procuradoria Geral do Munic&iacute;pio">Procuradoria Geral do Munic&iacute;pio</a><ul class="dropdown"><li><a href="secretarias/conselhos-municipais"  title="Conselhos Municipais">Conselhos Municipais</a></li><li><a href="secretarias/parcerias"  title="Parcerias">Parcerias</a></li></ul></li><li><a href="secretarias/relacoes-institucionais-e-esportes"  title="Rela&ccedil;&otilde;es Institucionais e Esportes">Rela&ccedil;&otilde;es Institucionais e Esportes</a></li><li class="has-children"><a href="secretarias/saude"  title="Sa&uacute;de">Sa&uacute;de</a><ul class="dropdown"><li><a href="http://www.santacruz.rs.gov.br/imagens/fluxograma atendimento menor.png" target="_blank" title="Fluxo de Atendimentos">Fluxo de Atendimentos</a></li><li><a href="secretarias/urgencia-e-emergencia"  title="Urg&ecirc;ncia e Emerg&ecirc;ncia">Urg&ecirc;ncia e Emerg&ecirc;ncia</a></li></ul></li><li><a href="secretarias/seguranca-e-mobilidade-urbana"  title="Seguran&ccedil;a e Mobilidade Urbana">Seguran&ccedil;a e Mobilidade Urbana</a></li><li><a href="secretarias/servicos-publicos"  title="Servi&ccedil;os P&uacute;blicos">Servi&ccedil;os P&uacute;blicos</a></li></ul></li><li><a href="links/noticias" title="Not&iacute;cias">Not&iacute;cias</a></li><li class="has-children"><a href="links/comunicacao" title=" Comunica&ccedil;&atilde;o"> Comunica&ccedil;&atilde;o</a><ul class="dropdown"><li><a href="comunicacao/atendimento-a-imprensa"  title="Atendimento &agrave; Imprensa">Atendimento &agrave; Imprensa</a></li><li><a href="comunicacao/central-de-atendimento-ao-cidadao"  title="Central de Atendimento ao Cidad&atilde;o">Central de Atendimento ao Cidad&atilde;o</a></li><li><a href="comunicacao/editais-segovri"  title="Editais SEGOVRI">Editais SEGOVRI</a></li><li><a href="comunicacao/identidade-padrao-de-comunicacao"  title="Identidade Padr&atilde;o de Comunica&ccedil;&atilde;o">Identidade Padr&atilde;o de Comunica&ccedil;&atilde;o</a></li><li><a href="comunicacao/midias-sociais"  title="M&iacute;dias Sociais">M&iacute;dias Sociais</a></li><li><a href="comunicacao/prefeitura-em-1-minuto-na-radio"  title="Prefeitura em 1 Minuto na R&aacute;dio">Prefeitura em 1 Minuto na R&aacute;dio</a></li><li><a href="comunicacao/prefeitura-em-1-minuto-na-tv"  title="Prefeitura em 1 Minuto na TV">Prefeitura em 1 Minuto na TV</a></li><li><a href="comunicacao/transmissao-ao-vivo"  title="Transmiss&atilde;o ao Vivo">Transmiss&atilde;o ao Vivo</a></li><li><a href="comunicacao/videos"  title="Videos">Videos</a></li><li><a href="comunicacao/whatsapp"  title="WhatsApp">WhatsApp</a></li></ul></li><li class="has-children"><a href="links/licitacoes" title="Licita&ccedil;&otilde;es">Licita&ccedil;&otilde;es</a><ul class="dropdown"><li><a href="https://grp.santacruz.rs.gov.br/transparencia/portal/#/consultaLicitacao" target="_blank" title="Consultar Licita&ccedil;&otilde;es">Consultar Licita&ccedil;&otilde;es</a></li><li><a href="http://grp.santacruz.rs.gov.br/grp/acessoexterno/programaAcessoExterno.faces?codigo=70452" target="_blank" title="Contratos">Contratos</a></li><li><a href="licitacoes/manuais-documentos"  title="Manuais / Documentos">Manuais / Documentos</a></li><li><a href="licitacoes/plano-de-contratacoes-anual"  title="Plano de Contrata&ccedil;&otilde;es Anual">Plano de Contrata&ccedil;&otilde;es Anual</a></li></ul></li><li class="has-children"><a href="links/concursos" title="Concursos">Concursos</a><ul class="dropdown"><li><a href="concursos/concurso-publico-001-2012"  title="Concurso P&uacute;blico 001/2012">Concurso P&uacute;blico 001/2012</a></li><li class="has-children"><a href="http://www.santacruz.rs.gov.br/concursos/" target="_blank" title="Concurso P&uacute;blico 001/2014">Concurso P&uacute;blico 001/2014</a><ul class="dropdown"><li><a href="http://www.objetivas.com.br/concurso/1245" target="_blank" title="Detalhes do Concurso">Detalhes do Concurso</a></li></ul></li><li><a href="https://www.consulpam.com.br/index.php?menu=concursos&amp;acao=ver&amp;id=611" target="_blank" title="Concurso P&uacute;blico 01/2024">Concurso P&uacute;blico 01/2024</a></li><li><a href="concursos/concurso-publico-2019"  title="Concurso P&uacute;blico 2019">Concurso P&uacute;blico 2019</a></li><li><a href="concursos/documentacao"  title="Documenta&ccedil;&atilde;o">Documenta&ccedil;&atilde;o</a></li><li><a href="https://www.santacruz.rs.gov.br/_pssonline" target="_blank" title="Processos Seletivos ONLINE">Processos Seletivos ONLINE</a></li><li><a href="http://www.santacruz.rs.gov.br/concursos/" target="_blank" title="Processos Seletivos PRESENCIAIS">Processos Seletivos PRESENCIAIS</a></li><li><a href="concursos/proximos-concursos"  title="Pr&oacute;ximos Concursos">Pr&oacute;ximos Concursos</a></li></ul></li><li><a href="links/contato" title="Contato">Contato</a></li><li><a href="https://w1ckert.github.io/trabalhos/igorw/html/index.html" title="Contato">Ouvidoria</a></li>               </ul>
+
+            <a
+              href="#"
+              class="burger me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<div class="hero page-inner overlay">
+            <div class="container">
+            <div class="row pt-5">
+                <div class="col text-center">
+                <h1 class="heading aos-init aos-animate" data-aos="fade-up">SAÚDE</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                    <ol class="breadcrumb text-center justify-content-center">
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">
+                    CANAL DE DENÚCIAS
+                    </li>
+                    </ol>
+                </nav>
+
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+ 
+                </nav>
+                </div>
+            </div>
+            </div>
+        </div><div class="section bg-light">
+    <div class="container">
+        <div class="row">
+
+	
+    <!-- Botões principais, que antes era uma coluna  -->
+<div class="section bg-light">
+  <div class="container">
+      <div class="row">
+
+        <main>
             <div class="div-senha-cadastro">
-                <h4 class="title-section">Senha</h4>
-                <input class="input-cadastro" required type="password" name="senha" placeholder="Senha">
+                <input class="input-cadastro" type="text"  placeholder="DIGITE AQUI">
+                <div onclick="window.location.href='https://w1ckert.github.io/trabalhos/igorw/html/dados.html'" class="botton-cadastro">
+                    <h3>Enviar</h3>
+                </div>
             </div>
-            <div class="div-senha-cadastro">
-                <h4 class="title-section">Confirmar Senha</h4>
-                <input class="input-cadastro" required type="password" name="senha" placeholder="Confirme sua senha">
-            </div>
-            <div class="botton-termo">
-                <b><input type="checkbox" name="checkbox"> Concordo com os <i><u><a class="termo-cadastro" href="../termo/">termos</a></u></i> de uso</b>
-            </div>
-            <div onclick="window.location.href='../sobre/'" class="botton-cadastro">
-                <h3>Criar</h3>
-            </div>
-        </section>
-    </main>
+        </main>
+
+          
+      </div>
+  </div>
+</div>
 
 
-</body>
 
+
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contato</h3>
+              <address>Palacinho da Praça da Bandeira</address>
+              <ul class="list-unstyled links">
+                <li>CEP 96810-178</li>
+                <li>Santa Cruz do Sul - RS - Brasil</li>
+                <li>(51) 3690-4143</li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Centro Adminstrativo</h3>
+              <address>Rua Coronel Oscar Rafael Jost, 1551</address>
+              <ul class="list-unstyled links">
+                <li>CEP: 96815-713</li>
+                <li>Santa Cruz do Sul - RS - Brasil</li>
+                <li></li>
+                <li>Secretaria de Administração</li>
+                <li>(51) 3690-4147</li>
+                <li>Secretaria de Fazenda</li>
+                <li>(51) 3690-4148</li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Serviços ao Usuário</h3>
+              <ul class="list-unstyled links">
+                <li><a href="/ouvidoria/?class=PrincipalPage&method=onNovoRegistro&idtipo=6" >Atendimento ao Cidadão</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="https://www.instagram.com/prefeitura_santacruz/" target="_blank"><span class="icon-instagram" title="Ícone do Instagram"></span></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/prefeiturasantacruzdosul/?locale=pt_BR" target="_blank"><span class="icon-facebook" title="Ícone do Facebook"></span></a>
+                </li>
+                <li>
+                  <a href="/comunicacao/whatsapp"><span class="icon-whatsapp" title="Whatsapp:(51)98443-0312"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+            <p ><a href="#">Topo do Site</a></p>
+          </div>
+          <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget({
+        position:'L'
+      });
+    </script>
+  </body>
 </html>
