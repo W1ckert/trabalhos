@@ -62,6 +62,7 @@
     margin-right: auto;
     margin-bottom: 50px;
     border: black solid 1px;
+    padding-top: 50px;
 }
 
 .input-cadastro {
@@ -69,9 +70,22 @@
     width: 400px;
     max-width: 90%;
     height: 40px;
-    background-color: rgb(15, 69, 113);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 10px;
+    margin-right:20px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.input-cadastro-chat {
+    font-size: 20px;
+    width: 400px;
+    max-width: 90%;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 15px;
     margin-right: 20px;
     border-color: rgb(15, 69, 113);
     border-radius: 4px;
@@ -82,14 +96,14 @@
 }
 
 .div-email-cadastro {
-    margin-top: 50px;
-    margin-left: 40px;
+   margin-top: 50px;
+   text-align: center;
 }
 
 .div-senha-cadastro {
     margin-top: 30px;
     margin-left: 40px;
-    text-align: ;
+    text-align: center;
 }
 
 .botton-cadastro {
@@ -101,9 +115,9 @@
     color: white;
     width: 190px;
     max-width: 70%;
-    padding-top: 15px;
+    padding-top: 13px;
     padding-bottom: 5px;
-    margin-top: 80px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -313,12 +327,16 @@ h3{
       <div class="row">
 
         <main>
-            <div class="div-senha-cadastro">
-                <input class="input-cadastro" type="text"  placeholder="DIGITE AQUI">
-                <div onclick="window.location.href='https://w1ckert.github.io/trabalhos/igorw/html/dados.html'" class="botton-cadastro">
-                    <h3>Enviar</h3>
-                </div>
+          <section class="section-main-cadastro">
+            <h3 class="input-cadastro-chat"><img src="https://w1ckert.github.io/trabalhos/igorw/assets/img/chatgpt1.png">Olá, como posso de ajudar?</h3>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="div-email-cadastro">
+              <input class="input-cadastro" required type="text" name="login" placeholder="Digite Aqui">
+          </div>
+            <div onclick="window.location.href='https://w1ckert.github.io/trabalhos/igorw/html/dados.html'" class="botton-cadastro">
+                <h3>Enviar</h3>
             </div>
+        </section>
         </main>
 
           
